@@ -124,7 +124,7 @@ Ask Meno Chatbot
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/aarya1603/MenoCare.git
+git clone https://github.com/shravankatee28-art/MenoCare.git
 
 ---
 
