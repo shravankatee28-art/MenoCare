@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>MenoCare - Ask Meno</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         NAVIGATION BAR
+         ============================== -->
+
+    <nav>
+
+        <div class="logo">
+            🌸 MenoCare
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="symptoms.html">Symptoms</a>
+
+            <a href="timeline.html">Timeline</a>
+
+            <a href="period.html">Period Tracker</a>
+
+            <a href="reports.html">Reports</a>
+
+            <a href="chatbot.html">Ask Meno</a>
+
+        </div>
+
+       <a href="login.html" class="login-btn">
+    Login
+</a>
+
+    </nav>
+
+
+
+    <!-- ==============================
+         HEADER
+         ============================== -->
+
+    <section class="chatbot-header">
+
+        <p>YOUR EDUCATIONAL ASSISTANT</p>
+
+        <h1>
+            Ask Meno
+        </h1>
+
+        <p>
+            Have questions about menopause, symptoms,
+            periods or everyday wellbeing? Ask Meno
+            for simple educational information.
+        </p>
+
+    </section>
+
+
+
+    <!-- ==============================
+         CHATBOT
+         ============================== -->
+
+    <section class="chat-container">
+
+
+        <div class="chat-card">
+
+
+            <!-- Chat Header -->
+
+            <div class="chat-card-header">
+
+                <div class="meno-avatar">
+                    🌸
+                </div>
+
+                <div>
+
+                    <h2>
+                        Ask Meno
+                    </h2>
+
+                    <p>
+                        Educational Assistant
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Messages -->
+
+            <div
+                id="chatMessages"
+                class="chat-messages"
+            >
+
+                <div class="bot-message">
+
+                    <div class="message-icon">
+                        🌸
+                    </div>
+
+                    <div class="message-content">
+
+                        <p>
+                            Hi! I'm Ask Meno. 🌸
+                        </p>
+
+                        <p>
+                            I can help you learn about
+                            menopause, perimenopause,
+                            common symptoms, periods,
+                            sleep and general wellbeing.
+                        </p>
+
+                        <p>
+                            What would you like to know?
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Suggested Questions -->
+
+            <div class="suggested-questions">
+
+                <p>
+                    You can ask:
+                </p>
+
+
+                <button
+                    onclick="askSuggestedQuestion('What is menopause?')"
+                >
+                    What is menopause?
+                </button>
+
+
+                <button
+                    onclick="askSuggestedQuestion('What is perimenopause?')"
+                >
+                    What is perimenopause?
+                </button>
+
+
+                <button
+                    onclick="askSuggestedQuestion('What are common menopause symptoms?')"
+                >
+                    Common symptoms
+                </button>
+
+
+                <button
+                    onclick="askSuggestedQuestion('Why are my periods irregular?')"
+                >
+                    Irregular periods
+                </button>
+
+
+                <button
+                    onclick="askSuggestedQuestion('What can help with sleep problems?')"
+                >
+                    Sleep problems
+                </button>
+
+
+                <button
+                    onclick="askSuggestedQuestion('When should I talk to a doctor?')"
+                >
+                    When should I see a doctor?
+                </button>
+
+            </div>
+
+
+
+            <!-- Input -->
+
+            <div class="chat-input-area">
+
+                <input
+                    type="text"
+                    id="chatInput"
+                    placeholder="Ask a question about menopause..."
+                >
+
+                <button
+                    id="sendMessage"
+                >
+                    Send
+                </button>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Disclaimer -->
+
+        <div class="chat-disclaimer">
+
+            <h3>
+                ⚠️ Important
+            </h3>
+
+            <p>
+                Ask Meno provides general educational
+                information. It cannot diagnose medical
+                conditions or replace advice from a
+                qualified healthcare professional.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==============================
+         FOOTER
+         ============================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🌸 MenoCare
+        </div>
+
+        <p>
+            Understand your body. Track your journey.
+        </p>
+
+        <p class="copyright">
+            © 2026 MenoCare. Educational project.
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

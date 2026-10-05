@@ -1,0 +1,2266 @@
+/* =========================================
+   MENOCARE - MAIN STYLESHEET
+   ========================================= */
+
+
+/* ---------- General Settings ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff9fb;
+    color: #333333;
+}
+
+
+/* =========================================
+   NAVIGATION BAR
+   ========================================= */
+
+nav {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    background-color: white;
+    border-bottom: 1px solid #f1dfe5;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b04b70;
+    white-space: nowrap;
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #b04b70;
+}
+
+
+/* Login Button */
+
+.login-btn {
+    background-color: #b04b70;
+    color: white;
+    border: none;
+    padding: 11px 23px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #963d5e;
+}
+
+
+/* =========================================
+   HOMEPAGE - HERO SECTION
+   ========================================= */
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10%;
+    gap: 60px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.small-heading {
+    color: #b04b70;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    color: #3d2630;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #b04b70;
+}
+
+.hero-description {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #666666;
+    max-width: 580px;
+    margin-bottom: 30px;
+}
+
+
+/* Hero Buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn {
+    background-color: #b04b70;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: #963d5e;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: #b04b70;
+    border: 1px solid #b04b70;
+    padding: 14px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.secondary-btn:hover {
+    background-color: #fff0f5;
+}
+
+
+/* =========================================
+   HOMEPAGE - CHECK-IN CARD
+   ========================================= */
+
+.hero-card {
+    width: 350px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(176, 75, 112, 0.15);
+}
+
+.card-top {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #b04b70;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.card-top span:first-child {
+    font-size: 25px;
+}
+
+.hero-card h3 {
+    font-size: 21px;
+    color: #3d2630;
+    margin-bottom: 25px;
+}
+
+
+/* Mood Options */
+
+.mood-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.mood-options div {
+    text-align: center;
+    font-size: 28px;
+    background-color: #fff5f8;
+    padding: 10px;
+    border-radius: 12px;
+    width: 60px;
+}
+
+.mood-options small {
+    font-size: 11px;
+    color: #777777;
+}
+
+.check-btn {
+    width: 100%;
+    padding: 13px;
+    background-color: #f6dce5;
+    color: #8d3655;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   HOMEPAGE - FEATURES
+   ========================================= */
+
+.features {
+    padding: 80px 8%;
+    background-color: white;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading p {
+    color: #b04b70;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    color: #3d2630;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.feature-card {
+    width: 300px;
+    min-height: 250px;
+    padding: 28px;
+    border: 1px solid #f0dfe5;
+    border-radius: 15px;
+    background-color: #fffafb;
+}
+
+.feature-card:hover {
+    box-shadow: 0 8px 25px rgba(176, 75, 112, 0.12);
+    transform: translateY(-4px);
+    transition: 0.3s;
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.feature-card h3 {
+    color: #3d2630;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #666666;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.feature-card a {
+    text-decoration: none;
+    color: #b04b70;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   HOMEPAGE - HOW IT WORKS
+   ========================================= */
+
+.how-section {
+    padding: 80px 10%;
+    background-color: #fff4f7;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 220px;
+    text-align: center;
+}
+
+.step-number {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #b04b70;
+    color: white;
+    font-weight: bold;
+}
+
+.step h3 {
+    color: #3d2630;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   DISCLAIMER
+   ========================================= */
+
+.disclaimer {
+    margin: 60px auto;
+    max-width: 900px;
+    padding: 25px 30px;
+    background-color: #fff1d9;
+    border-radius: 12px;
+}
+
+.disclaimer h3 {
+    color: #684b1f;
+    margin-bottom: 10px;
+}
+
+.disclaimer p {
+    color: #6c5a3a;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background-color: #3d2630;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.footer-logo {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #e8cbd4;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   SYMPTOM PAGE - HEADER
+   ========================================= */
+
+.symptom-header {
+    text-align: center;
+    padding: 70px 20px 45px;
+    background-color: #fff4f7;
+}
+
+.symptom-header p:first-child {
+    color: #b04b70;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.symptom-header h1 {
+    font-size: 42px;
+    color: #3d2630;
+    margin-bottom: 18px;
+}
+
+.symptom-header p:last-child {
+    max-width: 700px;
+    margin: auto;
+    color: #666666;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+/* =========================================
+   SYMPTOMS CONTAINER
+   ========================================= */
+
+.symptoms-container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+
+/* =========================================
+   SYMPTOM CATEGORY CARD
+   ========================================= */
+
+.symptom-category {
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(176, 75, 112, 0.05);
+}
+
+
+/* Category Heading */
+
+.category-title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.category-title span {
+    font-size: 38px;
+}
+
+.category-title h2 {
+    color: #3d2630;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.category-title p {
+    color: #888888;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   SYMPTOM OPTIONS
+   ========================================= */
+
+.symptom-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.symptom-list label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px;
+    background-color: #fff8fa;
+    border: 1px solid #f4e5e9;
+    border-radius: 10px;
+    color: #555555;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.symptom-list label:hover {
+    background-color: #fff0f5;
+    border-color: #e7b8c8;
+}
+
+.symptom-list input {
+    width: 17px;
+    height: 17px;
+    accent-color: #b04b70;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   OTHER SYMPTOM
+   ========================================= */
+
+.other-symptom {
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    border-radius: 18px;
+    padding: 30px;
+    margin-top: 25px;
+}
+
+.other-symptom h2 {
+    color: #3d2630;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.other-symptom p {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.other-symptom textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    border: 1px solid #e6d5db;
+    border-radius: 10px;
+    resize: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.other-symptom textarea:focus {
+    border-color: #b04b70;
+}
+
+
+/* =========================================
+   ANALYZE BUTTON
+   ========================================= */
+
+.analyze-section {
+    text-align: center;
+    margin: 45px 0;
+}
+
+.analyze-btn {
+    background-color: #b04b70;
+    color: white;
+    border: none;
+    padding: 16px 35px;
+    border-radius: 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.analyze-btn:hover {
+    background-color: #963d5e;
+}
+
+.analyze-section p {
+    margin-top: 15px;
+    color: #888888;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   SYMPTOM RESULT
+   ========================================= */
+
+.result-box {
+    background-color: white;
+    border: 2px solid #e7b8c8;
+    border-radius: 18px;
+    padding: 30px;
+    margin-top: 35px;
+    box-shadow: 0 8px 25px rgba(176, 75, 112, 0.10);
+}
+
+.result-box h2 {
+    color: #3d2630;
+    margin-bottom: 15px;
+}
+
+.result-box h3 {
+    color: #3d2630;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.result-box p {
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.result-box ul {
+    padding-left: 20px;
+}
+
+.result-box li {
+    color: #555555;
+    margin-bottom: 7px;
+}
+
+.medical-warning {
+    background-color: #fff4df;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .symptom-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 0 4%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 50px 7%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .symptom-header h1 {
+        font-size: 32px;
+    }
+
+    .symptoms-container {
+        width: 92%;
+    }
+
+    .symptom-category {
+        padding: 20px;
+    }
+
+    .symptom-list {
+        grid-template-columns: 1fr;
+    }
+
+    .category-title h2 {
+        font-size: 19px;
+    }
+}
+/* =========================================
+   SYMPTOM DETAILS
+   ========================================= */
+
+.symptom-details-section {
+    background-color: #fff4f7;
+    border: 1px solid #f0dfe5;
+    border-radius: 18px;
+    padding: 30px;
+    margin: 30px 0;
+}
+
+.symptom-details-section h2 {
+    color: #3d2630;
+    margin-bottom: 8px;
+}
+
+.symptom-details-section > p {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+
+/* Individual symptom */
+
+.symptom-detail-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #f0dfe5;
+}
+
+.symptom-detail-row strong {
+    width: 250px;
+    color: #3d2630;
+}
+
+
+/* Dropdown labels */
+
+.symptom-detail-row label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666666;
+    font-size: 13px;
+}
+
+
+/* Dropdown */
+
+.symptom-detail-row select {
+    padding: 8px 10px;
+    border: 1px solid #e0cbd2;
+    border-radius: 7px;
+    background-color: white;
+    color: #555555;
+    cursor: pointer;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .symptom-detail-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .symptom-detail-row strong {
+        width: 100%;
+    }
+
+}
+/* =========================================
+   SYMPTOM DETAILS
+   ========================================= */
+
+.symptom-details-section {
+    background-color: #fff4f7;
+    border: 1px solid #f0dfe5;
+    border-radius: 18px;
+    padding: 30px;
+    margin: 30px 0;
+}
+
+.symptom-details-section h2 {
+    color: #3d2630;
+    margin-bottom: 8px;
+}
+
+.symptom-details-section > p {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+
+/* Individual symptom */
+
+.symptom-detail-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #f0dfe5;
+}
+
+.symptom-detail-row strong {
+    width: 250px;
+    color: #3d2630;
+}
+
+
+/* Dropdown labels */
+
+.symptom-detail-row label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666666;
+    font-size: 13px;
+}
+
+
+/* Dropdown */
+
+.symptom-detail-row select {
+    padding: 8px 10px;
+    border: 1px solid #e0cbd2;
+    border-radius: 7px;
+    background-color: white;
+    color: #555555;
+    cursor: pointer;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .symptom-detail-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .symptom-detail-row strong {
+        width: 100%;
+    }
+
+}
+/* =========================================
+   HEALTH TIMELINE
+   ========================================= */
+
+.timeline-header {
+    text-align: center;
+    padding: 70px 20px 45px;
+    background-color: #fff4f7;
+}
+
+.timeline-header p:first-child {
+    color: #b04b70;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.timeline-header h1 {
+    font-size: 42px;
+    color: #3d2630;
+    margin-bottom: 18px;
+}
+
+.timeline-header p:last-child {
+    max-width: 650px;
+    margin: auto;
+    color: #666666;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+/* Timeline Container */
+
+.timeline-container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+
+/* Summary Cards */
+
+.timeline-summary {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.summary-card {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+}
+
+.summary-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.summary-card h3 {
+    font-size: 28px;
+    color: #3d2630;
+    margin-bottom: 5px;
+}
+
+.summary-card p {
+    color: #777777;
+    font-size: 13px;
+}
+
+
+/* Timeline Section */
+
+.timeline-section {
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.timeline-section-heading {
+    margin-bottom: 25px;
+}
+
+.timeline-section-heading p {
+    color: #b04b70;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.timeline-section-heading h2 {
+    color: #3d2630;
+    font-size: 24px;
+}
+
+
+/* Individual Timeline Record */
+
+.timeline-record {
+    border-left: 4px solid #b04b70;
+    background-color: #fff8fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0 12px 12px 0;
+}
+
+.timeline-record-date {
+    color: #b04b70;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.timeline-record h3 {
+    color: #3d2630;
+    margin-bottom: 15px;
+}
+
+.timeline-symptom {
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    padding: 8px 12px;
+    border-radius: 20px;
+    margin: 4px;
+    color: #555555;
+    font-size: 13px;
+}
+
+
+/* No Data */
+
+.no-timeline-data {
+    text-align: center;
+    padding: 45px 20px;
+    background-color: #fff8fa;
+    border-radius: 12px;
+}
+
+.no-data-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.no-timeline-data h3 {
+    color: #3d2630;
+    margin-bottom: 10px;
+}
+
+.no-timeline-data p {
+    color: #777777;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+/* Timeline Button */
+
+.timeline-button {
+    display: inline-block;
+    background-color: #b04b70;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.timeline-button:hover {
+    background-color: #963d5e;
+}
+
+
+/* Graph Placeholder */
+
+.graph-placeholder {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff8fa;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.graph-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.graph-placeholder h3 {
+    color: #3d2630;
+    margin-bottom: 10px;
+}
+
+.graph-placeholder p {
+    color: #777777;
+    font-size: 14px;
+}
+
+
+/* Information */
+
+.timeline-information {
+    background-color: #fff1d9;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 50px;
+}
+
+.timeline-information h3 {
+    color: #684b1f;
+    margin-bottom: 10px;
+}
+
+.timeline-information p {
+    color: #6c5a3a;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Timeline Mobile */
+
+@media (max-width: 700px) {
+
+    .timeline-container {
+        width: 92%;
+    }
+
+    .timeline-header h1 {
+        font-size: 32px;
+    }
+
+    .timeline-summary {
+        flex-direction: column;
+    }
+
+    .timeline-section {
+        padding: 20px;
+    }
+
+}
+/* =========================================
+   PERIOD TRACKER
+   ========================================= */
+
+.period-header {
+    text-align: center;
+    padding: 70px 20px 45px;
+    background-color: #fff4f7;
+}
+
+.period-header p:first-child {
+    color: #b04b70;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.period-header h1 {
+    font-size: 42px;
+    color: #3d2630;
+    margin-bottom: 18px;
+}
+
+.period-header p:last-child {
+    max-width: 650px;
+    margin: auto;
+    color: #666666;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+/* Main Container */
+
+.period-container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+
+/* Period Card */
+
+.period-card {
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(176, 75, 112, 0.05);
+}
+
+
+/* Heading */
+
+.period-card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.period-card-heading p {
+    color: #b04b70;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.period-card-heading h2 {
+    color: #3d2630;
+    font-size: 25px;
+}
+
+.period-icon {
+    font-size: 42px;
+}
+
+
+/* Form */
+
+.period-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #555555;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    border: 1px solid #e0cbd2;
+    border-radius: 9px;
+    background-color: white;
+    font-size: 14px;
+    color: #555555;
+}
+
+
+/* Period Symptoms */
+
+.period-symptoms {
+    margin-top: 30px;
+}
+
+.period-symptoms h3 {
+    color: #3d2630;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.period-symptom-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.period-symptom-options label {
+    background-color: #fff8fa;
+    border: 1px solid #f0dfe5;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #555555;
+    cursor: pointer;
+}
+
+.period-symptom-options label:hover {
+    background-color: #fff0f5;
+}
+
+.period-symptom-options input {
+    accent-color: #b04b70;
+    margin-right: 5px;
+}
+
+
+/* Save Button */
+
+.save-period-btn {
+    margin-top: 30px;
+    background-color: #b04b70;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.save-period-btn:hover {
+    background-color: #963d5e;
+}
+
+.period-note {
+    color: #999999;
+    font-size: 11px;
+    margin-top: 12px;
+}
+
+
+/* Summary */
+
+.period-summary {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.period-summary-card {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+}
+
+.period-summary-card div {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.period-summary-card h3 {
+    color: #3d2630;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.period-summary-card p {
+    color: #777777;
+    font-size: 13px;
+}
+
+
+/* History */
+
+.period-history {
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.period-section-heading {
+    margin-bottom: 25px;
+}
+
+.period-section-heading p {
+    color: #b04b70;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.period-section-heading h2 {
+    color: #3d2630;
+    font-size: 24px;
+}
+
+
+/* Period Record */
+
+.period-record {
+    background-color: #fff8fa;
+    border-left: 4px solid #b04b70;
+    border-radius: 0 12px 12px 0;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.period-record-date {
+    color: #b04b70;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.period-record-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.period-detail {
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    padding: 7px 12px;
+    border-radius: 15px;
+    color: #555555;
+    font-size: 12px;
+}
+
+
+/* No Data */
+
+.no-period-data {
+    text-align: center;
+    background-color: #fff8fa;
+    border-radius: 12px;
+    padding: 40px 20px;
+}
+
+.no-period-data div {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.no-period-data h3 {
+    color: #3d2630;
+    margin-bottom: 8px;
+}
+
+.no-period-data p {
+    color: #777777;
+    font-size: 14px;
+}
+
+
+/* Information */
+
+.period-information {
+    background-color: #fff1d9;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-bottom: 50px;
+}
+
+.period-information h3 {
+    color: #684b1f;
+    margin-bottom: 10px;
+}
+
+.period-information p {
+    color: #6c5a3a;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .period-container {
+        width: 92%;
+    }
+
+    .period-header h1 {
+        font-size: 32px;
+    }
+
+    .period-form {
+        grid-template-columns: 1fr;
+    }
+
+    .period-summary {
+        flex-direction: column;
+    }
+
+    .period-card {
+        padding: 20px;
+    }
+
+}
+/* =========================================
+   MEDICAL REPORTS
+   ========================================= */
+
+.reports-header {
+    text-align: center;
+    padding: 70px 20px 45px;
+    background-color: #fff4f7;
+}
+
+.reports-header p:first-child {
+    color: #b04b70;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.reports-header h1 {
+    font-size: 42px;
+    color: #3d2630;
+    margin-bottom: 18px;
+}
+
+.reports-header p:last-child {
+    max-width: 700px;
+    margin: auto;
+    color: #666666;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+/* Main Container */
+
+.reports-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+
+/* Upload Card */
+
+.report-upload-card {
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    border-radius: 18px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(176, 75, 112, 0.05);
+}
+
+.report-upload-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.report-upload-card h2 {
+    color: #3d2630;
+    margin-bottom: 10px;
+}
+
+.report-upload-card > p {
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Upload Area */
+
+.upload-area {
+    margin: 30px auto 10px;
+    max-width: 550px;
+}
+
+.upload-label {
+    min-height: 170px;
+    border: 2px dashed #d9a9b9;
+    border-radius: 15px;
+    background-color: #fff8fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.upload-label:hover {
+    background-color: #fff0f5;
+    border-color: #b04b70;
+}
+
+.upload-label span {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.upload-label strong {
+    color: #3d2630;
+    margin-bottom: 6px;
+}
+
+.upload-label small {
+    color: #888888;
+}
+
+
+/* Hide actual file input */
+
+#reportFile {
+    display: none;
+}
+
+
+/* Selected File */
+
+.selected-file {
+    margin-top: 12px;
+    color: #b04b70 !important;
+    font-weight: bold;
+}
+
+
+/* Analyze Button */
+
+.analyze-report-btn {
+    margin-top: 20px;
+    background-color: #b04b70;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.analyze-report-btn:hover {
+    background-color: #963d5e;
+}
+
+
+/* Disclaimer */
+
+.report-disclaimer {
+    margin-top: 15px;
+    color: #999999 !important;
+    font-size: 11px !important;
+}
+
+
+/* Report Result */
+
+.report-result {
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    border-radius: 18px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.report-result-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.report-result-heading > span {
+    font-size: 35px;
+}
+
+.report-result-heading p {
+    color: #b04b70;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+
+.report-result-heading h2 {
+    color: #3d2630;
+    font-size: 24px;
+}
+
+.report-summary-content {
+    background-color: #fff8fa;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.report-summary-content p {
+    color: #666666;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* Warning */
+
+.report-warning {
+    background-color: #fff1d9;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin-top: 25px;
+}
+
+.report-warning h3 {
+    color: #684b1f;
+    margin-bottom: 10px;
+}
+
+.report-warning p {
+    color: #6c5a3a;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Saved Reports */
+
+.saved-reports {
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    border-radius: 18px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.reports-section-heading {
+    margin-bottom: 25px;
+}
+
+.reports-section-heading p {
+    color: #b04b70;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.reports-section-heading h2 {
+    color: #3d2630;
+    font-size: 24px;
+}
+
+
+/* Report Record */
+
+.saved-report {
+    background-color: #fff8fa;
+    border-left: 4px solid #b04b70;
+    border-radius: 0 12px 12px 0;
+    padding: 18px;
+    margin-bottom: 15px;
+}
+
+.saved-report-name {
+    color: #3d2630;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.saved-report-date {
+    color: #888888;
+    font-size: 12px;
+}
+
+
+/* No Reports */
+
+.no-reports {
+    text-align: center;
+    background-color: #fff8fa;
+    border-radius: 12px;
+    padding: 40px 20px;
+}
+
+.no-reports div {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.no-reports h3 {
+    color: #3d2630;
+    margin-bottom: 8px;
+}
+
+.no-reports p {
+    color: #777777;
+    font-size: 14px;
+}
+
+
+/* Privacy */
+
+.report-information {
+    background-color: #f5f1f3;
+    border-radius: 12px;
+    padding: 25px 30px;
+    margin: 30px 0 50px;
+}
+
+.report-information h3 {
+    color: #3d2630;
+    margin-bottom: 10px;
+}
+
+.report-information p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .reports-container {
+        width: 92%;
+    }
+
+    .reports-header h1 {
+        font-size: 32px;
+    }
+
+    .report-upload-card {
+        padding: 25px 20px;
+    }
+
+}
+/* =========================================
+   ASK MENO CHATBOT
+   ========================================= */
+
+.chatbot-header {
+    text-align: center;
+    padding: 70px 20px 45px;
+    background-color: #fff4f7;
+}
+
+.chatbot-header p:first-child {
+    color: #b04b70;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.chatbot-header h1 {
+    font-size: 42px;
+    color: #3d2630;
+    margin-bottom: 18px;
+}
+
+.chatbot-header p:last-child {
+    max-width: 650px;
+    margin: auto;
+    color: #666666;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+/* Chat Container */
+
+.chat-container {
+    width: 85%;
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+
+/* Chat Card */
+
+.chat-card {
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(176, 75, 112, 0.08);
+}
+
+
+/* Chat Header */
+
+.chat-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 22px 25px;
+    background-color: #fff4f7;
+    border-bottom: 1px solid #f0dfe5;
+}
+
+.meno-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.chat-card-header h2 {
+    color: #3d2630;
+    margin-bottom: 3px;
+}
+
+.chat-card-header p {
+    color: #888888;
+    font-size: 12px;
+}
+
+
+/* Messages */
+
+.chat-messages {
+    min-height: 400px;
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 25px;
+}
+
+
+/* Bot Message */
+
+.bot-message {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.message-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff1f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.message-content {
+    background-color: #fff4f7;
+    border-radius: 0 15px 15px 15px;
+    padding: 14px 17px;
+    max-width: 75%;
+}
+
+.message-content p {
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.message-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* User Message */
+
+.user-message {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.user-message-content {
+    background-color: #b04b70;
+    color: white;
+    padding: 12px 17px;
+    border-radius: 15px 0 15px 15px;
+    max-width: 75%;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* Suggested Questions */
+
+.suggested-questions {
+    padding: 20px 25px;
+    border-top: 1px solid #f0dfe5;
+}
+
+.suggested-questions p {
+    color: #777777;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.suggested-questions button {
+    background-color: #fff8fa;
+    border: 1px solid #e5cdd5;
+    color: #8f3d5b;
+    padding: 8px 13px;
+    border-radius: 20px;
+    margin: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.suggested-questions button:hover {
+    background-color: #fff0f5;
+}
+
+
+/* Input */
+
+.chat-input-area {
+    display: flex;
+    gap: 10px;
+    padding: 20px 25px;
+    border-top: 1px solid #f0dfe5;
+}
+
+.chat-input-area input {
+    flex: 1;
+    padding: 13px 16px;
+    border: 1px solid #dfcbd2;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+}
+
+.chat-input-area input:focus {
+    border-color: #b04b70;
+}
+
+.chat-input-area button {
+    background-color: #b04b70;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.chat-input-area button:hover {
+    background-color: #963d5e;
+}
+
+
+/* Disclaimer */
+
+.chat-disclaimer {
+    background-color: #fff1d9;
+    border-radius: 12px;
+    padding: 22px 25px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.chat-disclaimer h3 {
+    color: #684b1f;
+    margin-bottom: 8px;
+}
+
+.chat-disclaimer p {
+    color: #6c5a3a;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .chat-container {
+        width: 92%;
+    }
+
+    .chatbot-header h1 {
+        font-size: 32px;
+    }
+
+    .chat-input-area {
+        padding: 15px;
+    }
+
+    .chat-input-area button {
+        padding: 10px 15px;
+    }
+
+    .message-content,
+    .user-message-content {
+        max-width: 85%;
+    }
+
+}
+/* =========================================
+   HOME DASHBOARD
+   ========================================= */
+
+.home-dashboard {
+    width: 85%;
+    max-width: 1100px;
+    margin: 60px auto;
+}
+
+.dashboard-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-heading p {
+    color: #b04b70;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.dashboard-heading h2 {
+    color: #3d2630;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.dashboard-heading span {
+    color: #777777;
+    font-size: 14px;
+}
+
+
+/* Dashboard Cards */
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.dashboard-card {
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    border-radius: 16px;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.dashboard-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.dashboard-card h3 {
+    color: #3d2630;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.dashboard-card p {
+    color: #777777;
+    font-size: 12px;
+}
+
+
+/* Dashboard Message */
+
+.dashboard-message {
+    margin-top: 20px;
+    padding: 18px 22px;
+    background-color: #fff4f7;
+    border-radius: 12px;
+    text-align: center;
+    color: #7a5260;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .home-dashboard {
+        width: 92%;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================================
+   LOGIN PAGE
+   ========================================= */
+
+.login-container {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff8fa;
+    padding: 50px 20px;
+}
+
+.login-card {
+    width: 400px;
+    max-width: 100%;
+    background-color: white;
+    border: 1px solid #f0dfe5;
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(176, 75, 112, 0.08);
+}
+
+.login-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.login-card h1 {
+    color: #3d2630;
+    margin-bottom: 10px;
+}
+
+.login-card > p {
+    color: #777777;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.login-card h2 {
+    color: #3d2630;
+    font-size: 18px;
+    margin: 20px 0 12px;
+}
+
+.login-card input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    border: 1px solid #dfcbd2;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.login-card input:focus {
+    border-color: #b04b70;
+}
+
+.login-main-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 25px;
+    background-color: #b04b70;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.login-main-btn:hover {
+    background-color: #963d5e;
+}
+
+.login-card hr {
+    border: none;
+    border-top: 1px solid #f0dfe5;
+    margin: 30px 0;
+}
+
+.login-message {
+    margin-top: 15px;
+    color: #b04b70;
+    font-size: 13px;
+}

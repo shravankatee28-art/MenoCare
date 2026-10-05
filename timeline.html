@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>MenoCare - Health Timeline</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         NAVIGATION BAR
+         ============================== -->
+
+   <nav>
+
+    <div class="logo">
+        🌸 MenoCare
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="symptoms.html">Symptoms</a>
+
+        <a href="timeline.html">Timeline</a>
+
+        <a href="period.html">Period Tracker</a>
+
+        <a href="reports.html">Reports</a>
+
+        <a href="chatbot.html">Ask Meno</a>
+
+    </div>
+
+   <a href="login.html" class="login-btn">
+    Login
+</a>
+
+</nav>
+
+
+
+    <!-- ==============================
+         PAGE HEADER
+         ============================== -->
+
+    <section class="timeline-header">
+
+        <p>YOUR HEALTH JOURNEY</p>
+
+        <h1>
+            Health Timeline
+        </h1>
+
+        <p>
+            Look back at the symptoms you have recorded
+            and understand how they are changing over time.
+        </p>
+
+    </section>
+
+
+
+    <!-- ==============================
+         TIMELINE CONTENT
+         ============================== -->
+
+    <section class="timeline-container">
+
+
+        <!-- Summary Cards -->
+
+        <div class="timeline-summary">
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+                    🌸
+                </div>
+
+                <h3 id="totalRecords">
+                    0
+                </h3>
+
+                <p>
+                    Check-ins
+                </p>
+
+            </div>
+
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+                    🔍
+                </div>
+
+                <h3 id="totalSymptoms">
+                    0
+                </h3>
+
+                <p>
+                    Symptoms Recorded
+                </p>
+
+            </div>
+
+
+
+            <div class="summary-card">
+
+                <div class="summary-icon">
+                    📅
+                </div>
+
+                <h3 id="lastCheckIn">
+                    -
+                </h3>
+
+                <p>
+                    Last Check-in
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Weekly Overview -->
+
+        <div class="timeline-section">
+
+            <div class="timeline-section-heading">
+
+                <div>
+
+                    <p>
+                        WEEKLY OVERVIEW
+                    </p>
+
+                    <h2>
+                        Your Recent Check-ins
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- Data will be added here using JavaScript -->
+
+            <div id="timelineRecords">
+
+            </div>
+
+
+            <!-- No Data Message -->
+
+            <div id="noTimelineData" class="no-timeline-data">
+
+                <div class="no-data-icon">
+                    📊
+                </div>
+
+                <h3>
+                    No health data yet
+                </h3>
+
+                <p>
+                    Complete a symptom check-in to start
+                    building your health timeline.
+                </p>
+
+                <a href="symptoms.html" class="timeline-button">
+                    Check My Symptoms →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Future Graph Section -->
+
+        <div class="timeline-section">
+
+            <div class="timeline-section-heading">
+
+                <div>
+
+                    <p>
+                        HEALTH TRENDS
+                    </p>
+
+                    <h2>
+                        Your Symptoms Over Time
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="graph-placeholder">
+
+                <div class="graph-icon">
+                    📈
+                </div>
+
+                <h3>
+                    Your health graph will appear here
+                </h3>
+
+                <p>
+                    Continue recording your symptoms to
+                    build enough data for meaningful trends.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Information Box -->
+
+        <div class="timeline-information">
+
+            <h3>
+                🌸 Why track your symptoms?
+            </h3>
+
+            <p>
+                Tracking symptoms over time can help you
+                notice patterns and prepare useful information
+                for conversations with a healthcare professional.
+                MenoCare does not use this information to
+                diagnose medical conditions.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==============================
+         FOOTER
+         ============================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🌸 MenoCare
+        </div>
+
+        <p>
+            Understand your body. Track your journey.
+        </p>
+
+        <p class="copyright">
+            © 2026 MenoCare. Educational project.
+        </p>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>MenoCare - Medical Reports</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         NAVIGATION BAR
+         ============================== -->
+
+   <nav>
+
+    <div class="logo">
+        🌸 MenoCare
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="symptoms.html">Symptoms</a>
+
+        <a href="timeline.html">Timeline</a>
+
+        <a href="period.html">Period Tracker</a>
+
+        <a href="reports.html">Reports</a>
+
+        <a href="chatbot.html">Ask Meno</a>
+
+    </div>
+
+    <a href="login.html" class="login-btn">
+    Login
+</a>
+
+</nav>
+
+
+
+    <!-- ==============================
+         PAGE HEADER
+         ============================== -->
+
+    <section class="reports-header">
+
+        <p>YOUR HEALTH DOCUMENTS</p>
+
+        <h1>
+            Medical Report Helper
+        </h1>
+
+        <p>
+            Upload a medical report and MenoCare will help
+            you organize the information and highlight
+            results that may be worth discussing with a
+            healthcare professional.
+        </p>
+
+    </section>
+
+
+
+    <!-- ==============================
+         REPORT CONTAINER
+         ============================== -->
+
+    <section class="reports-container">
+
+
+        <!-- ==========================
+             UPLOAD CARD
+             ========================== -->
+
+        <div class="report-upload-card">
+
+
+            <div class="report-upload-icon">
+                🧪
+            </div>
+
+
+            <h2>
+                Upload Your Report
+            </h2>
+
+
+            <p>
+                Upload a medical report or test result.
+                For this prototype, PDF, TXT and image files
+                can be selected.
+            </p>
+
+
+            <div class="upload-area">
+
+
+                <label
+                    for="reportFile"
+                    class="upload-label"
+                >
+
+                    <span>
+                        📄
+                    </span>
+
+                    <strong>
+                        Choose a report
+                    </strong>
+
+                    <small>
+                        PDF, TXT, JPG or PNG
+                    </small>
+
+                </label>
+
+
+                <input
+                    type="file"
+                    id="reportFile"
+                    accept=".pdf,.txt,.jpg,.jpeg,.png"
+                >
+
+            </div>
+
+
+            <p
+                id="selectedFileName"
+                class="selected-file"
+            >
+                No file selected
+            </p>
+
+
+            <button
+                id="analyzeReport"
+                class="analyze-report-btn"
+            >
+                Analyze Report →
+            </button>
+
+
+            <p class="report-disclaimer">
+
+                Your report is only used for this prototype.
+                MenoCare does not provide a medical diagnosis.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- ==========================
+             REPORT SUMMARY
+             ========================== -->
+
+        <div
+            id="reportResult"
+            class="report-result"
+        >
+
+            <div class="report-result-heading">
+
+                <span>
+                    📋
+                </span>
+
+                <div>
+
+                    <p>
+                        REPORT SUMMARY
+                    </p>
+
+                    <h2>
+                        Your Report Overview
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="reportSummaryContent"
+                class="report-summary-content"
+            >
+
+                <p>
+                    Upload a report to see a basic summary here.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==========================
+             WARNING
+             ========================== -->
+
+        <div
+            id="reportWarning"
+            class="report-warning"
+        >
+
+            <h3>
+                ⚠️ Important
+            </h3>
+
+
+            <p>
+                A flagged result does not necessarily mean
+                that something is wrong. Test results can be
+                affected by many factors. Any concerning or
+                abnormal result should be discussed with a
+                qualified healthcare professional.
+            </p>
+
+        </div>
+
+
+
+        <!-- ==========================
+             SAVED REPORTS
+             ========================== -->
+
+        <div class="saved-reports">
+
+
+            <div class="reports-section-heading">
+
+                <p>
+                    YOUR DOCUMENTS
+                </p>
+
+                <h2>
+                    Recent Reports
+                </h2>
+
+            </div>
+
+
+            <div id="savedReportsList">
+
+            </div>
+
+
+            <div
+                id="noReports"
+                class="no-reports"
+            >
+
+                <div>
+                    📁
+                </div>
+
+                <h3>
+                    No reports uploaded yet
+                </h3>
+
+                <p>
+                    Your uploaded report entries will
+                    appear here.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==========================
+             PRIVACY INFORMATION
+             ========================== -->
+
+        <div class="report-information">
+
+            <h3>
+                🔐 Your privacy matters
+            </h3>
+
+            <p>
+                This prototype does not send your medical
+                documents to an external medical service.
+                Later, when MenoCare has user accounts and
+                a secure database, report storage will be
+                designed with privacy and access control
+                in mind.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==============================
+         FOOTER
+         ============================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🌸 MenoCare
+        </div>
+
+        <p>
+            Understand your body. Track your journey.
+        </p>
+
+        <p class="copyright">
+            © 2026 MenoCare. Educational project.
+        </p>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>MenoCare - Period Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         NAVIGATION BAR
+         ============================== -->
+
+    <nav>
+
+    <div class="logo">
+        🌸 MenoCare
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="symptoms.html">Symptoms</a>
+
+        <a href="timeline.html">Timeline</a>
+
+        <a href="period.html">Period Tracker</a>
+
+        <a href="reports.html">Reports</a>
+
+        <a href="chatbot.html">Ask Meno</a>
+
+    </div>
+
+   <a href="login.html" class="login-btn">
+    Login
+</a> <button class="login-btn">
+        Login
+    </button>
+
+</nav>
+
+
+
+    <!-- ==============================
+         PAGE HEADER
+         ============================== -->
+
+    <section class="period-header">
+
+        <p>MENSTRUAL HEALTH</p>
+
+        <h1>
+            Period Tracker
+        </h1>
+
+        <p>
+            Track your menstrual cycle and notice changes
+            in your period pattern over time.
+        </p>
+
+    </section>
+
+
+
+    <!-- ==============================
+         PERIOD TRACKER
+         ============================== -->
+
+    <section class="period-container">
+
+
+        <!-- ==========================
+             ADD PERIOD
+             ========================== -->
+
+        <div class="period-card">
+
+            <div class="period-card-heading">
+
+                <div>
+                    <p>NEW ENTRY</p>
+
+                    <h2>
+                        Record Your Period
+                    </h2>
+                </div>
+
+                <span class="period-icon">
+                    🩸
+                </span>
+
+            </div>
+
+
+            <div class="period-form">
+
+
+                <!-- Start Date -->
+
+                <div class="form-group">
+
+                    <label for="periodStart">
+                        First day of period
+                    </label>
+
+                    <input
+                        type="date"
+                        id="periodStart"
+                    >
+
+                </div>
+
+
+                <!-- End Date -->
+
+                <div class="form-group">
+
+                    <label for="periodEnd">
+                        Last day of period
+                    </label>
+
+                    <input
+                        type="date"
+                        id="periodEnd"
+                    >
+
+                </div>
+
+
+                <!-- Flow -->
+
+                <div class="form-group">
+
+                    <label for="periodFlow">
+                        Flow
+                    </label>
+
+                    <select id="periodFlow">
+
+                        <option value="Light">
+                            Light
+                        </option>
+
+                        <option value="Medium">
+                            Medium
+                        </option>
+
+                        <option value="Heavy">
+                            Heavy
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Period Symptoms -->
+
+            <div class="period-symptoms">
+
+                <h3>
+                    Symptoms during this period
+                </h3>
+
+                <div class="period-symptom-options">
+
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            value="Cramps"
+                            class="period-symptom"
+                        >
+
+                        Cramps
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            value="Back pain"
+                            class="period-symptom"
+                        >
+
+                        Back pain
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            value="Headache"
+                            class="period-symptom"
+                        >
+
+                        Headache
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            value="Mood changes"
+                            class="period-symptom"
+                        >
+
+                        Mood changes
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            value="Fatigue"
+                            class="period-symptom"
+                        >
+
+                        Fatigue
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            value="Bloating"
+                            class="period-symptom"
+                        >
+
+                        Bloating
+
+                    </label>
+
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="save-period-btn"
+                id="savePeriod"
+            >
+                Save Period Entry →
+            </button>
+
+
+            <p class="period-note">
+                Your period information is stored locally in
+                this prototype. It is not a medical diagnosis.
+            </p>
+
+        </div>
+
+
+
+        <!-- ==========================
+             PERIOD SUMMARY
+             ========================== -->
+
+        <div class="period-summary">
+
+
+            <div class="period-summary-card">
+
+                <div>
+                    🩸
+                </div>
+
+                <h3 id="lastPeriod">
+                    -
+                </h3>
+
+                <p>
+                    Last Period
+                </p>
+
+            </div>
+
+
+            <div class="period-summary-card">
+
+                <div>
+                    📅
+                </div>
+
+                <h3 id="cycleLength">
+                    -
+                </h3>
+
+                <p>
+                    Last Cycle Length
+                </p>
+
+            </div>
+
+
+            <div class="period-summary-card">
+
+                <div>
+                    🔄
+                </div>
+
+                <h3 id="periodCount">
+                    0
+                </h3>
+
+                <p>
+                    Periods Recorded
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==========================
+             RECENT PERIODS
+             ========================== -->
+
+        <div class="period-history">
+
+            <div class="period-section-heading">
+
+                <p>
+                    YOUR HISTORY
+                </p>
+
+                <h2>
+                    Recent Periods
+                </h2>
+
+            </div>
+
+
+            <div id="periodRecords">
+
+            </div>
+
+
+            <div
+                id="noPeriodData"
+                class="no-period-data"
+            >
+
+                <div>
+                    🩸
+                </div>
+
+                <h3>
+                    No periods recorded yet
+                </h3>
+
+                <p>
+                    Add your first period entry above to
+                    start tracking your menstrual pattern.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ==========================
+             PATTERN INFORMATION
+             ========================== -->
+
+        <div class="period-information">
+
+            <h3>
+                🌸 Understanding your cycle
+            </h3>
+
+            <p>
+                Menstrual cycles can change during the
+                menopausal transition. Tracking your dates
+                can help you notice changes in your own
+                pattern over time.
+            </p>
+
+            <p>
+                MenoCare does not use your cycle information
+                to diagnose perimenopause or menopause.
+                Significant, persistent, or concerning changes
+                should be discussed with a healthcare professional.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ==============================
+         FOOTER
+         ============================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🌸 MenoCare
+        </div>
+
+        <p>
+            Understand your body. Track your journey.
+        </p>
+
+        <p class="copyright">
+            © 2026 MenoCare. Educational project.
+        </p>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
